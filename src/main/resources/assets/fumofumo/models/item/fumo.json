@@ -46,7 +46,10 @@
 		{ "predicate": { "custom_model_data": 38}, "model": "fumofumo:item/original/aunn" },
 		{ "predicate": { "custom_model_data": 39}, "model": "fumofumo:item/original/byakuren" },
 		{ "predicate": { "custom_model_data": 40}, "model": "fumofumo:item/original/doremy" },
-		{ "predicate": { "custom_model_data": 41}, "model": "fumofumo:item/original/eirin" }
+		{ "predicate": { "custom_model_data": 41}, "model": "fumofumo:item/original/eirin" },
+		{ "predicate": { "custom_model_data": 42}, "model": "fumofumo:item/original/kokoro" },
+		{ "predicate": { "custom_model_data": 43}, "model": "fumofumo:item/original/kagiyama" },
+		{ "predicate": { "custom_model_data": 44}, "model": "fumofumo:item/original/lapislazuli" }
 	],
 	"elements": [
 		{
