@@ -10,15 +10,15 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(ExampleMod.MOD_ID)
-public class ExampleMod
+@Mod(FumoFumo.MOD_ID)
+public class FumoFumo
 {
     // Directly reference a log4j logger.
 
     // private static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "fumofumo";
 
-    public ExampleMod() {
+    public FumoFumo() {
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // Register the setup method for modloading

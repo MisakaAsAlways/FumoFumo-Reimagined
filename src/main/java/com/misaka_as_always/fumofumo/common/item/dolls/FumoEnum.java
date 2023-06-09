@@ -48,7 +48,10 @@ public enum FumoEnum implements IStringSerializable {
     AUNN(38, "aunn"),
     BYAKUREN(39, "byakuren"),
     DOREMY(40, "doremy"),
-    EIRIN(41, "eirin");
+    EIRIN(41, "eirin"),
+    KOKORO(42, "kokoro"),
+    KAGIYAMA(43, "kagiyama"),
+    HECATIA(44, "hecatia");
 
     @Override
     public String toString() {
