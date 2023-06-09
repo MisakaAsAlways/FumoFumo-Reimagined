@@ -16,6 +16,10 @@ import org.jetbrains.annotations.NotNull;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class FumoBox extends Item {
+    private final FumoEnum[] MYTHICAL = {
+            FumoEnum.BLUE_REIMU, FumoEnum.SMART_CIRNO, FumoEnum.PC98_MARISA,
+            FumoEnum.HECATIA
+    };
     private final FumoEnum[] LEGENDARY = {
             FumoEnum.FLAN, FumoEnum.UTSUHO, FumoEnum.KOISHI,
             FumoEnum.KAGUYA, FumoEnum.MOKOU, FumoEnum.NUE,
@@ -25,24 +29,26 @@ public class FumoBox extends Item {
             FumoEnum.CIRNO, FumoEnum.CLOWNPIECE, FumoEnum.SATORI,
             FumoEnum.REISEN, FumoEnum.TENSHI, FumoEnum.PATCHOULI,
             FumoEnum.YUUKA, FumoEnum.SUIKA, FumoEnum.REMILIA,
-            FumoEnum.BYAKUREN, FumoEnum.DOREMY
+            FumoEnum.BYAKUREN, FumoEnum.DOREMY, FumoEnum.EIRIN,
+            FumoEnum.KOKORO
     };
     private final FumoEnum[] RARE = {
             FumoEnum.REIMU, FumoEnum.MARISA, FumoEnum.TEWI,
             FumoEnum.SAKUYA, FumoEnum.SEIJA, FumoEnum.RAN,
-            FumoEnum.YOUMU, FumoEnum.AUNN
+            FumoEnum.YOUMU, FumoEnum.AUNN,
     };
     private final FumoEnum[] COMMON = {
             FumoEnum.AYA, FumoEnum.CHEN, FumoEnum.WAKASAGIHIME,
             FumoEnum.RUMIA, FumoEnum.HATATE, FumoEnum.PARSEE,
-            FumoEnum.SHION,
+            FumoEnum.SHION, FumoEnum.KAGIYAMA
     };
 
     @NotNull
     @Override
     public ActionResult<ItemStack> use(@NotNull World world, @NotNull PlayerEntity player, @NotNull Hand hand) {
         RandomCollection<Object> fumoCategory = new RandomCollection<>()
-                .add(75, COMMON).add(20, RARE).add(4.9, EPIC).add(0.1, LEGENDARY);
+                .add(70, COMMON).add(23, RARE).add(6.8, EPIC).add(0.19, LEGENDARY)
+                .add(0.01, MYTHICAL);
 
         FumoEnum[] fumoEnums = (FumoEnum[]) fumoCategory.next();
         int random_int = ThreadLocalRandom.current().nextInt(0, fumoEnums.length);

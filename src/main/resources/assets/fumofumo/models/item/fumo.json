@@ -49,7 +49,7 @@
 		{ "predicate": { "custom_model_data": 41}, "model": "fumofumo:item/original/eirin" },
 		{ "predicate": { "custom_model_data": 42}, "model": "fumofumo:item/original/kokoro" },
 		{ "predicate": { "custom_model_data": 43}, "model": "fumofumo:item/original/kagiyama" },
-		{ "predicate": { "custom_model_data": 44}, "model": "fumofumo:item/original/lapislazuli" }
+		{ "predicate": { "custom_model_data": 44}, "model": "fumofumo:item/original/hecatia" }
 	],
 	"elements": [
 		{

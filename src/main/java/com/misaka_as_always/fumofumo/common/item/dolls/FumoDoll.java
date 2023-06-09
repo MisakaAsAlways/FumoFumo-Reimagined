@@ -1,7 +1,7 @@
 package com.misaka_as_always.fumofumo.common.item.dolls;
 
 import com.misaka_as_always.fumofumo.common.FumoCreativeTab;
-import com.misaka_as_always.fumofumo.ExampleMod;
+import com.misaka_as_always.fumofumo.FumoFumo;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
@@ -19,7 +19,7 @@ import net.minecraftforge.registries.ObjectHolder;
 import org.jetbrains.annotations.NotNull;
 
 public class FumoDoll extends Item {
-    @ObjectHolder(ExampleMod.MOD_ID + ":fumo")
+    @ObjectHolder(FumoFumo.MOD_ID + ":fumo")
     public static final Item TAB_ICON = null;
 
     public static final ItemGroup fumoGroup = new FumoCreativeTab("fumofumo_touhou",
@@ -58,7 +58,7 @@ public class FumoDoll extends Item {
     public @NotNull ITextComponent getName(@NotNull ItemStack stack)
     {
         String fumoTypeText = getFumoType(stack).getSerializedName();
-        return new TranslationTextComponent("item." + ExampleMod.MOD_ID + "." + fumoTypeText);
+        return new TranslationTextComponent("item." + FumoFumo.MOD_ID + "." + fumoTypeText);
     }
 
     public static void defaultTotemBehavior(LivingDeathEvent event, LivingEntity entity, ItemStack heldItem, boolean removeItem) {
